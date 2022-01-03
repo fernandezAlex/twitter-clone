@@ -15,9 +15,9 @@ React, Material UI, CSS3 & Firebase
 
 ### Dependencis
 
-npm i material-ui/core
-npm i material-ui/icons
-npm i tributejs
+*npm i material-ui/core
+*npm i material-ui/icons
+*npm i tributejs
 
 ### Scripts
 

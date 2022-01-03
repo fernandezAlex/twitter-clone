@@ -9,6 +9,7 @@ I am working on the implementation with the Data base with Fire Base, I didn't h
 By Alex Fernandez 
 
 ## STACK 
+![twitter-clone-stack](https://user-images.githubusercontent.com/29735491/147920795-0f3ceaf8-b013-41c3-8ad5-90b923cb33c9.PNG)
 
 React, Material UI, CSS3 & Firebase
 

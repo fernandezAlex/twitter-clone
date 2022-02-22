@@ -9,6 +9,17 @@
     flex: 1;
     padding: 10px;
   }
+
+  .post a {
+      background-color: transparent;
+      color:var(--twitter-color);
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .post p {
+    margin-bottom: 16px;
+  }
   
   .post__body > img {
     border-radius: 20px;

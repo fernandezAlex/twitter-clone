@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef }  from 'react'
 import "../styles/components/Post.css"
 import { Avatar } from "@material-ui/core"
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
@@ -7,7 +7,7 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 
-export const Post = ({
+export const Post = forwardRef (({
     displayName,
     userName,
     verified,
@@ -15,27 +15,28 @@ export const Post = ({
     text,
     image,
     avatar
-}) => {
+}, ref) => {
     return (
-        <div className="post">
+        <div className="post" ref={ref}>
             <div className="post__avatar">
-                <Avatar src="https://i.pravatar.cc/300"/>
+                <Avatar src={avatar}/>
             </div>
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                            Alex Fernández 
+                           {displayName}{" "}
                             <span>
-                                <VerifiedUserIcon className="post__badge" /> @alexfernandez
+                                {verified && <VerifiedUserIcon className="post__badge" />}
+                                @{userName}
                             </span>
                         </h3>
                     </div>
                 </div>
                 <div className="post_headerDescription">
-                    <p>This is my first Post</p>   
+                    <p  dangerouslySetInnerHTML={{__html: text}} />
                 </div>
-                <img src="https://via.placeholder.com/600x300" alt=""/>
+                <img src={image} alt=""/>
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small" />
                     <RepeatIcon fontSize="small" />
@@ -45,4 +46,4 @@ export const Post = ({
             </div>
         </div>
     )
-}
+});

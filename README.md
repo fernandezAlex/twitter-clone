@@ -17,18 +17,12 @@ React, Material UI, CSS3 & Firebase
 
 ### Dependencis
 
-<<<<<<< HEAD
 npm i material-ui/core
 npm i material-ui/icons
 npm i tributejs
 npm i react-twitter-embed
 npm i firebase
 npm i react-flip-move
-=======
-- npm i material-ui/core
-- npm i material-ui/icons
-- npm i tributejs
->>>>>>> f772b4db4e856bed113cc9c3cfbe7782c466905e
 
 ### Scripts
 
